@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    DateTime a = DateTime.Now;
+    string serverDate = a.ToString("MM/dd/yyyy HH:mm");
+}
+
+<div class="text-center">
+    <h1 class="display-3 text-secondary fw-bolder">Hello!</h1>
+    <br>
+    <h3 class="text-secondary ">The current date and time on the server is:</h3>
+    <br>
+    <h1 class="display-2  border border-secondary text-success">@serverDate</h1>
+</div>
